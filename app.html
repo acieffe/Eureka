@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 	<head>
-		<title>App Name: A Coding Project By Ace Baugh</title>
+		<title>Eureka!: A Coding Project By Ace Baugh</title>
 		<!-- Required meta tags -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -28,7 +28,7 @@
 				<!-- Navbar Logo -->
 				<div class="ps-2">
 					<a href="http://digitalelegance.com/index.html"></a
-					><a href="index.html" class="navbar-brand header-logo"><img src="img/DE.svg" class="d-inline-block align-text-top mt-1" height="40px">***APP NAME***</a>
+					><a href="index.html" class="navbar-brand header-logo"><img src="img/DE.svg" class="d-inline-block align-text-top mt-1" height="40px"> Eureka!</a>
 				</div>
 				<button
 					class="navbar-toggler border-gold"
@@ -89,15 +89,46 @@
 		</nav>
 
 		<!-- ====== Maiu Section ====== -->
-		<main class="flex-shrink-0 d-flex pb-5">
-			<div class="container col-xxl-8 px-4 py-5 bg-black-8 text-light">
+		<main class="flex-shrink-0 d-flex pb-2 mb-5">
+			<div class="container col-xxl-8 px-4 py-5 my-5 bg-black-8 text-light">
+				<div class="row rowcols-1 row-cols-lg-2">
+					<div class="col-lg-4">
+						<h1>Eureka!: A Coding Project</h1>
+						<h4 class="lead">Have the same epiphony of seeing code work. A javascript coding exercise using loops. Write a  program that displays the fibonacci sequence numbers 1 to 100 with prime numbers as <strong>BOLD</strong>.</h4>
+						<h2 class="mt-5 border-bottom-gold">Instructions</h2>
+						<p>Enter a starting value and ending value. Press the button asnd the values will appear.</p>
+					</div>
+					<div class="col-lg-8">
+						<h5>Enter Values</h5>
+						<form class="row gy-2 gx-3">
+							<div class="col">
+								<input type="number" id="startValue" class="form-control" placeholder="Start Value" value="1" min="1" max="20" aria-label="Start Value" required>
+							</div>
+							<div class="col">
+								<input type="number" id="endValue" class="form-control" placeholder="End Value" value="100" min="21" max="1000000" aria-label="End Value" required>
+							</div>
+							<div class="col-12 d-flex justify-content-end">
+								<button id="btnSubmit" type="button" class="btn btn-warning btn-lg me-2">Display Values</button>
+								<button id="btnEmpty" type="button" class="btn btn-outline-warning btn-lg">Clear Values</button>
+							</div>
+						</form>
+						<h2 class="mt-5 border-bottom-gold">Results</h2>
+						<div class="table-responsive mb-5">
+							<table class="table table-dark text-light table-striped table-sm mb-5">
+								<tbody id="results" class="mb-5">
+									<!-- Results go here -->
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 
 		<!-- ====== Footer ======= -->
-		<footer class="full-width footer-radius bg-black border-gold text-gold py-2 fixed-bottom">
+		<footer class="full-width footer-radius fixed-bottom bg-black border-gold text-gold pb-2">
 			<div class="container">
-				<div class="row">
+				<div class="row pt-md-2 row-cols-1 row-cols-md-3">
 					<div class="col-md-3 d-none d-md-block">
 						<h5 class="thick">Site Links</h5>
 						<ul class="text-gold no-bullet footer-list">
@@ -105,26 +136,31 @@
 							<li><a class="text-gold" href="https://digitalelegance.com/finecode/index.html">Fine Code | Home</a></li>
 							<li><a class="text-gold" href="https://digitalelegance.com/finecode/index.html#about">About</a></li>
 							<li><a class="text-gold" href="https://digitalelegance.com/finecode/index.html#portfolio">Portfolio</a></li>
-							<li><a class="text-gold" href="https://digitalelegance.com/finecode/blog/index.html">Blog</a></li>
+							<li><a class="text-gold" href="https://digitalelegance.com/finecode/blog/index.html#blog">Blog</a></li>
 							<li><a class="text-gold" href="https://digitalelegance.com/finecode/index.html#contact">Conatct</a></li>
 						</ul>
 					</div>
-					<div class="col-md-6">
-                  <img src="img/DigitalElegance.svg" alt="Digital Elegance">
+					<div class="col-12 col-md-6 p-0">
+						<div class="bg-steel footer-radius text-center h-100">
+                  <img id="de-logo" class="img-fluid h-100 p-2" src="img/DigitalElegance.svg" alt="Digital Elegance">
+						</div>
 					</div>
-					<div class="col-md-3">
-						<h5 class="thick">Contact Me</h5>
-						<ul class="text-gold no-bullet footer-list mb-2">
+					<div class="col-12 col-md-3">
+						<h5 class="thick d-none d-md-block">Contact Me</h5>
+						<ul class="nav flex-md-column text-gold mb-2 footer-list">
 							<li>Ace Baugh</li>
+							<li class="d-md-none px-1">|</li>
 							<li>Orlando, Florida</li>
+							<li class="d-md-none px-1">|</li>
 							<li>
 								<a class="text-gold" href="tel:208-557-9223">(208) 55-79-ACE (223)</a>
 							</li>
-							<li>
+							<li class="d-md-none px-1">|</li>
+							<li class="px-md-0 h-25 d-block-inline">
 								<a class="text-gold" href="mailto:ace@digitalelegance.com">ace@digitalelegance.com</a>
 							</li>
 						</ul>
-						<div class="social-icons">
+						<div class="social-icons text-center text-md-start">
 							<a href="https://www.linkedin.com/in/acieffe/"
 								><i class="fab fa-linkedin h4 text-gold"></i></a>
 
@@ -155,5 +191,9 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="js/site.js"></script>
+		<script>
+			document.getElementById('btnSubmit').addEventListener("click", isValid);
+			document.getElementById('btnEmpty').addEventListener("click", emptyTable);
+		</script>
 	</body>
 </html>
